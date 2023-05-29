@@ -1,0 +1,23 @@
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .countdown-item {
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  .countdown-value {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .countdown-label {
+    font-size: 1rem;
+  }
+
+  .countdown-label,   .countdown-value{
+    color: var(--primary-text-color);
+  }
