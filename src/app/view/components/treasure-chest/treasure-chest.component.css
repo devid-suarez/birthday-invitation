@@ -1,0 +1,12 @@
+.treasure-chest {
+    cursor: pointer;
+}
+
+.closed-img,
+.opened-img {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}

@@ -10,19 +10,75 @@
 
 app-clock {
     position: absolute;
-    top: 30%;
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -10%);
 }
 
 .banner p {
     color: var(--primary-text-color);
+    padding-inline: 5px;
 }
 
 .text-container {
-    text-align: center;
-    bottom: 10%;
+    bottom: 5%;
     position: absolute;
     width: 100%;
-    background-color: rgb(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-footer {
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    font-size: 1rem;
+}
+
+
+
+.text-input-container {
+    width: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.text-input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.text-input-container.incorrect {
+    background-color: #e39c21;
+}
+
+
+.question-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.question-button i {
+    font-size: 1.2rem;
+}
+
+.question-button:hover {
+    color: #ffcc00;
+}
+
+.question-button:focus {
+    outline: none;
 }

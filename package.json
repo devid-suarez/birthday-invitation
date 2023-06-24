@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --o --port 4003",
-    "build": "ng build",
+    "build": "ng build --base-href https://devid-suarez.github.io/birthday-invitation/",
+    "deploy": "ngh --dir dist/birthday-invitation",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

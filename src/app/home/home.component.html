@@ -1,7 +1,15 @@
 <section class="banner">
-    <img src="./assets/eiffel_tower.webp" alt="Eiffel Tower Image">
+    <img src="./assets/madrid.webp" alt="Madrid image">
+
     <app-clock></app-clock>
-    <div class = "text-container">
-        <p>Bientôt plus d'informations</p>
+    <div class="text-container">
+        <p class="text-footer" [innerHTML]=message></p>
+
+        <div class="text-input-container" [class.incorrect]="incorrectAnswer">
+            <input type="text" class="text-input" [(ngModel)]="inputText" (input)="onInputChange()">
+            <button class="question-button" (click)="validateText()"><i class="fa fa-question icon"></i></button>
+        </div>
+
     </div>
+    <!-- <app-treasure-chest [isOpen] = "isOpen" (click)="openChest()"></app-treasure-chest> -->
 </section>
