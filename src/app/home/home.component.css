@@ -21,7 +21,7 @@ app-clock {
 }
 
 .text-container {
-    bottom: 5%;
+    bottom: 10%;
     position: absolute;
     width: 100%;
     display: flex;
